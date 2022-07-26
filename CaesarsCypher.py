@@ -1,7 +1,6 @@
-print('Добро пожаловать в программу шифрования/дешифрования методом Цезаря!')
-
 ENGALPHA = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 RUSALPHA = 'АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
+
 
 def info_request():
     while True:
@@ -31,8 +30,10 @@ def info_request():
         else:
             break
     return direction, lang, key, text
-    
+
+
 def encription():
+    print('Добро пожаловать в программу шифрования/дешифрования методом Цезаря!')
     direction, lang, key, text = info_request()
     if lang == 'en':
         for i in text:
